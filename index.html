@@ -12,7 +12,97 @@
             <h1 id="title" class="description text-center">Developer Survey Form</h1>
             <p>Thank you for taking the time to tell us about your developer expeience</p>
         </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label"for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label"for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label"for="number">Age (Optional)</label>
+                <input type="number" name="Age" id="number" min="10" max="99" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <p>What is favorite programming lanuage?</p>
+                <select name="role" id="dropdown" class="form-control">
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">Javascript</option>
+                    <option value="php">PHP</option>
+                    <option value="ruby">Ruby</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend programming to a friend?</p>
+                <label>
+                    <input type="radio" value="yes" name="user-recommend" class="input-radio">
+                    Yes
+                </label>
+                <label>
+                    <input type="radio" value="no" name="user-recommend" class="input-radio">
+                    No
+                </label>
+                <label>
+                    <input type="radio" value="maybe" name="user-recommend" class="input-radio">
+                    Maybe
+                </label>
+            </div>
+            <div class="form-group">
+                <p>What is favorite resource to learn programming</p>
+                <select name="favorite" id="favorite" class="form-control">
+                    <option value="college">College</option>
+                    <option value="freecodecamp">Freecodecamp</option>
+                    <option value="odinproject">OdinProject</option>
+                    <option value="documentation">Documentation</option>
+                    <option value="book">Books</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>What areas of programming do you like to work in? (Select all that apply)</p>
+                <label>
+                    <input name="like" value="front-end" type="checkbox" class="input-checkbox">
+                    Front-end
+                </label>
+                <label>
+                    <input name="like" value="back-end" type="checkbox" class="input-checkbox">
+                    Back-end
+                </label>
+                <label>
+                    <input name="like" value="machine-learning" type="checkbox" class="input-checkbox">
+                    Machine Learning
+                </label>
+                <label>
+                    <input name="like" value="robotics" type="checkbox" class="input-checkbox">
+
+                </label>
+                <label>
+                    <input name="like" value="game-developing" type="checkbox" class="input-checkbox">
+                    Game Developing
+                </label>
+                <label>
+                    <input name="like" value="databases" type="checkbox" class="input-checkbox">
+                    Databases
+                </label>
+                <label>
+                    <input name="like" value="networks" type="checkbox" class="input-checkbox">
+                    Networks
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Additional Comments</p>
+                <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter additional comments here"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+            <div class="form-group">
+                <button type="reset" id="reset" class="reset-button">Reset</button>
+            </div>
+        </form>
     </div>
-    
 </body>
 </html>
