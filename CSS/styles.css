@@ -10,8 +10,8 @@ head {
 }
 
 :root {
-    --background-color: blue;
-    --form-bg: rgb(197, 248, 200);
+    --background-color: rgb(6, 53, 29);
+    --form-bg: rgb(11, 36, 12);
     --text-color: white;
 }
 
@@ -28,18 +28,6 @@ body {
     background-size: cover;
 }
 
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
-}
-
 .container {
     width: 100%;
     margin: 3.125rem auto 0 auto;
@@ -52,6 +40,7 @@ body {
 
 header {
     display: block;
+    text-align: center;
 }
 
 h1, p {
@@ -81,8 +70,10 @@ h1 {
 form {
     display: block;
     margin-top: 0em;;
-    background: var(--form-bg);
+    background: rgba(7, 34, 59, 0.7);
     border-radius: 0.25rem;
+    padding: 30px;
+    margin-bottom: 100px;
 }
 
 .form-group {
@@ -107,12 +98,11 @@ label {
     width: 100%;
     height: 2.375rem;
     padding: 0.375rem 0.75rem;
-    color: var(--background-color);
-    background-color: aliceblue;
     background-clip: padding-box;
     border: 1px solid grey;
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    
 }
 
 input, button, select, textarea {
@@ -134,4 +124,38 @@ input, button, select, textarea {
     width: 100%;
     padding: 0.625rem;
     resize: vertical;
+}
+
+/* Submit / Reset buttons */
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: green;
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.reset-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: red;
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
 }
