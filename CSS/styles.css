@@ -23,7 +23,7 @@ body {
     color: var(--text-color);
     margin: 0;
     display: block;
-    background-image: url(IMG/SFBG.jpeg);
+    background-image: url(../IMG/SFBG.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
